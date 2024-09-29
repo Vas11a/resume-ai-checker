@@ -1,3 +1,5 @@
-Tasks:
+Server tasks
 
-1) Refactr frontend js
+Tasks structure: Task; Name; Status
+
+1) Update prompt; Vasyl/Vadim ; ToDo
