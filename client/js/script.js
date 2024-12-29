@@ -23,7 +23,7 @@ const analyzeResume = async (file, companyType) => {
     formData.append("company_type", companyType);
 
     try {
-        const response = await fetch("http://resume-scan-ai.digital/api/analyze-resume", {
+        const response = await fetch("http://localhost:3001/analyze-resume", {
             method: "POST",
             body: formData
         });
@@ -34,6 +34,8 @@ const analyzeResume = async (file, companyType) => {
         }
 
         const result = await response.json();
+        console.log(result);
+        
         console.log(result);
         localStorage.setItem('resumeFeedback', JSON.stringify(result));
         window.location.href = "/feedback.html";

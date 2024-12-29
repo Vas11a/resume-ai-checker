@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ResumeScanAi - AI-powered resume checker to validate and improve your resume. Get detailed feedback tailored to the type of company you’re targeting.">
+    <meta name="keywords" content="resume scanner, AI resume checker, resume feedback, resume improvement, job application, AI-powered resume">
+    <meta name="author" content="ResumeScanAi Team">
+    <meta property="og:title" content="ResumeScanAi - AI Resume Checker">
+    <meta property="og:description" content="Upload your resume and get detailed feedback tailored for startups, big tech, small companies, or freelancing. Improve your chances of landing a job.">
+    <meta property="og:image" content="./img/og-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ResumeScanAi - AI Resume Checker">
+    <meta name="twitter:description" content="AI-powered resume validation and feedback for better job applications.">
+    <meta name="twitter:image" content="./img/twitter-card-image.jpg">
+    <!-- <link rel="canonical" href="https://yourwebsite.com"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Cheker Resume</title>
+    <title>ResumeScanAi - AI-Powered Resume Checker</title>
 </head>
 <body>
     <div class="wrapper">
@@ -34,7 +46,7 @@
             <section class="wecan margin--section">
                 <div class="wecan__container">
                     <nav>
-                        <ul class="text--normal">
+                        <ul class="text--normal" style="display: flex; justify-content: center;" >
                             <li>
                                 <img src="./img/about/info.svg" alt="=>">
                                 <p>Welcome to <b>ResumeScanAi</b>, where you can validate your
@@ -71,10 +83,6 @@
                                 </div>
                                 <input class="scan__fileinput" id="file" type="file"
                                  accept=".pdf" onchange="updateFileName()">
-                                 <!-- <div class="scan__pdfwarning">
-                                    <span>!</span>
-                                    <p>Download your resume as a <b>PDF</b></p>
-                                 </div> -->
                             </div>
                             <div class="scan__accept">
                                 <div class="scan__questions">
@@ -111,7 +119,8 @@
                                 disabled>Scan</button>
                             </div>
                         </div>
-                        <div class="scan__loading display--none"></div>
+                        <div class="scan__loading display--none">
+                        </div>
                     </form>
                 </div>
             </section>
@@ -176,40 +185,6 @@
                     </div>
                 </div>
             </section>
-            <!-- <section id="about" class="margin--section about">
-                <div class="text--normal about__container">
-                    <h2 class="text--title margin--title about__title">How it works</h2>
-                    <div class="about__content">
-                        <div class="about__items">
-                            <img src="./img/about/info.svg" alt="about us">
-                            <p>Welcome to <b>ResumeScanAi</b>. 
-                                Here you can check the validity of your resume for different 
-                                types of companies. Get an overall assessment as well as more 
-                                narrow feedback that will help you improve your resume.
-                            </p>
-                        </div>
-                        <div class="about__items">
-                            <img src="./img/about/ai.svg" alt="about us">
-                            <p>
-                                Upload your resume in <b>PDF</b> format and then select the type of 
-                                company you are most focused on, this will help artificial 
-                                intelligence better understand where you aspire to go and give 
-                                a more accurate assessment. 
-                            </p>
-                        </div>
-                        <div class="about__items">
-                            <img src="./img/about/feedback.svg" alt="about us">
-                            <p>
-                                After the review, you will receive an evaluation of your resume,
-                                 items that positively influenced the evaluation, as well as those
-                                  that should be changed. And in this you will be helped by general
-                                   <b>feedback</b> aimed at general statistics and help in
-                                    correcting your resume.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
         </main>
         <footer class="footer">
             <div class="footer__container">
